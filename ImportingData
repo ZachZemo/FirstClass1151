@@ -9,6 +9,6 @@ parser.add_argument("-f", "--file", dest="file", help="input data file")
 args = parser.parse_args()
 file = args.file
 
-sales = pd.read_excel(filepath_or_buffer=file, sep=' ', header=0)
+sales = pd.read_csv(filepath_or_buffer=file, sep=' ', header=0)
 print(sales)
 diabetes_df = pd.DataFrame(data=sales)
